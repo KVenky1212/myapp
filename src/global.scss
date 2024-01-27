@@ -1,0 +1,84 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+body 
+{font-family: 'Inter', sans-serif;}
+
+ion-toolbar.toolbar-title-default.md.in-toolbar.hydrated.toolbar-searchbar {
+    padding: 15px;
+    --background-color: red;
+    --background: #efa51e;
+} 
+ion-title.md.title-default.hydrated {
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+ion-searchbar.sc-ion-searchbar-md-h.sc-ion-searchbar-md-s.md.searchbar-left-aligned.searchbar-should-show-clear.hydrated {
+    --box-shadow: none;
+}
+input.searchbar-input.sc-ion-searchbar-md {
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 10px 10px 40px;
+    font-weight: 400;
+}
+ion-content.md.content-ltr.hydrated {
+    --padding: 15px;
+    --padding-top: 15px !important;
+    --padding-bottom: 15px !important;
+    --padding-start: 15px !important;
+    --padding-end: 15px !important;
+    --background: white;
+}
+ion-list.md.list-md.hydrated {
+    padding: 0px !important;
+}
+
+ion-item.item-has-start-slot.item.md.item-lines-default.item-fill-none.in-list.ion-focusable.hydrated.item-label {
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    box-shadow: 0px 0px 2px #000000ad;
+    border: 1px solid orangered;
+}
+ion-list.md.list-md.hydrated {
+    padding: 0px !important;
+    background: white !important;
+}
+
+ion-content[_ngcontent-ng-c3850418127]   ion-thumbnail[_ngcontent-ng-c3850418127] {
+    width: 100%;
+    /* max-width: 300px; */
+    margin: 0px !important;
+    margin-top: 0px !important;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    height: 150px !important;
+}

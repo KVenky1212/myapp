@@ -1,0 +1,22 @@
+<!-- details.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img [src]="imageDetails.download_url" alt="Image">
+    <ion-card-content>
+      <ion-card-title>{{ imageDetails.author }}</ion-card-title>
+      <p>ID: {{ imageDetails.id }}</p>
+      <p>Width: {{ imageDetails.width }}</p>
+      <p>Height: {{ imageDetails.height }}</p>
+      <p>URL: <a [href]="imageDetails.url" target="_blank">{{ imageDetails.url }}</a></p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

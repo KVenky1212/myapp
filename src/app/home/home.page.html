@@ -1,0 +1,24 @@
+<!-- home.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Cordova App
+    </ion-title>
+<ion-searchbar placeholder="Search your route" (ionInput)="searchImage($event.target.value!)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let image of filteredImages">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="image.download_url" alt="Picsum Image"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ image.author }}</h2>
+        <p>{{ image.width }} x {{ image.height }}</p>
+      </ion-label>
+      <ion-button (click)="showDetails(image)">INFO</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
